@@ -1,4 +1,4 @@
-import { MapPin, Clock } from '@phosphor-icons/react'
+import { MapPinIcon, ClockIcon } from '@phosphor-icons/react'
 import { Card } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 
@@ -16,17 +16,17 @@ export function EventDetails() {
         {/* Jamaica photo strip */}
         <div className="grid grid-cols-3 gap-3 mb-16 max-w-3xl mx-auto">
           <img
-            src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=500&fit=crop"
+            src="/photos/gallery/jamaica-09.jpeg"
             alt="Engagement in Jamaica"
             className="rounded-xl object-cover aspect-[3/4] w-full"
           />
           <img
-            src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=500&fit=crop"
+            src="/photos/gallery/jamaica-02.jpeg"
             alt="Engagement in Jamaica"
             className="rounded-xl object-cover aspect-[3/4] w-full"
           />
           <img
-            src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=400&h=500&fit=crop"
+            src="/photos/gallery/jamaica-04.jpeg"
             alt="Engagement in Jamaica"
             className="rounded-xl object-cover aspect-[3/4] w-full"
           />
@@ -37,12 +37,12 @@ export function EventDetails() {
           <Card className="p-8 hover:shadow-xl transition-shadow duration-300">
             <div className="text-center">
               <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mx-auto mb-6">
-                <Clock weight="fill" className="w-8 h-8 text-primary" />
+                <ClockIcon weight="fill" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-semibold mb-4">When</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p className="text-lg font-medium text-foreground">
-                  October 17, 2026
+                  November 25, 2026
                 </p>
                 <p className="text-lg">
                   4:00 PM - 10:00 PM
@@ -55,7 +55,7 @@ export function EventDetails() {
           <Card className="p-8 hover:shadow-xl transition-shadow duration-300">
             <div className="text-center">
               <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mx-auto mb-6">
-                <MapPin weight="fill" className="w-8 h-8 text-primary" />
+                <MapPinIcon weight="fill" className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-semibold mb-4">Where</h3>
               <div className="space-y-2 text-muted-foreground">
@@ -83,6 +83,22 @@ export function EventDetails() {
               </div>
             </div>
           </Card>
+        </div>
+
+        {/* Map */}
+        <div className="mt-16">
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.5!2d-81.5117!3d28.3517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7f2a0b3b3b3b%3A0x0!2s13245+Lake+Bryan+Dr%2C+Orlando%2C+FL+32821!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Paradise Cove location"
+            />
+          </div>
         </div>
       </div>
     </section>

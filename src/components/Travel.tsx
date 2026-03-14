@@ -1,4 +1,4 @@
-import { AirplaneTakeoff, MapPin, Phone, Globe, Bus } from '@phosphor-icons/react'
+import { AirplaneTakeoffIcon, MapPinIcon, PhoneIcon, GlobeIcon, BusIcon, StarIcon } from '@phosphor-icons/react'
 import { Card } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 import { Button } from '@/components/ui/button'
@@ -10,8 +10,8 @@ export function Travel() {
         {/* Header with Jamaica photo banner */}
         <div className="relative rounded-2xl overflow-hidden mb-16 h-64 md:h-80">
           <img
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1400&h=600&fit=crop"
-            alt="Tropical palm trees"
+            src="/photos/gallery/jamaica-16.jpeg"
+            alt="Jamaica engagement - gazebo"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center pb-10">
@@ -25,7 +25,7 @@ export function Travel() {
         {/* Airports */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-8">
-            <AirplaneTakeoff weight="fill" className="w-8 h-8 text-primary" />
+            <AirplaneTakeoffIcon weight="fill" className="w-8 h-8 text-primary" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Airports</h2>
           </div>
           <Separator className="w-24 bg-primary h-0.5 mb-8" />
@@ -49,7 +49,7 @@ export function Travel() {
         {/* Hotels */}
         <div>
           <div className="flex items-center gap-3 mb-8">
-            <MapPin weight="fill" className="w-8 h-8 text-primary" />
+            <MapPinIcon weight="fill" className="w-8 h-8 text-primary" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Hotel Recommendations</h2>
           </div>
           <Separator className="w-24 bg-primary h-0.5 mb-8" />
@@ -66,11 +66,11 @@ export function Travel() {
 
                   <div className="space-y-3 text-muted-foreground">
                     <div className="flex items-start gap-2">
-                      <MapPin weight="fill" className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <MapPinIcon weight="fill" className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       <p>13351 Kissimmee Vineland Rd, Orlando, FL 32821</p>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Phone weight="fill" className="w-5 h-5 text-primary flex-shrink-0" />
+                      <PhoneIcon weight="fill" className="w-5 h-5 text-primary flex-shrink-0" />
                       <a href="tel:+14072394500" className="hover:text-primary transition-colors">(407) 239-4500</a>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ export function Travel() {
 
                   <div className="mt-6 p-4 bg-primary/5 rounded-xl border border-primary/20">
                     <div className="flex items-center gap-2 mb-2">
-                      <Bus weight="fill" className="w-5 h-5 text-primary" />
+                      <BusIcon weight="fill" className="w-5 h-5 text-primary" />
                       <span className="font-semibold text-foreground">FREE Shuttle</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
@@ -103,7 +103,7 @@ export function Travel() {
                     className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90"
                     onClick={() => window.open('https://holidayinnresortorlandolakebuenavista.reservationstays.com/hotels/1G4mD0Wq', '_blank')}
                   >
-                    <Globe className="w-4 h-4 mr-2" />
+                    <GlobeIcon className="w-4 h-4 mr-2" />
                     Book Now
                   </Button>
                 </div>
@@ -120,11 +120,11 @@ export function Travel() {
 
                   <div className="space-y-3 text-muted-foreground">
                     <div className="flex items-start gap-2">
-                      <MapPin weight="fill" className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <MapPinIcon weight="fill" className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       <p>8317 Lake Bryan Beach Boulevard, Orlando, Florida, 32821</p>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Phone weight="fill" className="w-5 h-5 text-primary flex-shrink-0" />
+                      <PhoneIcon weight="fill" className="w-5 h-5 text-primary flex-shrink-0" />
                       <a href="tel:+18552560288" className="hover:text-primary transition-colors">+1-855-256-0288</a>
                     </div>
                   </div>
@@ -147,7 +147,7 @@ export function Travel() {
                     className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90"
                     onClick={() => window.open('https://www.hilton.com/en/hotels/mcobegv-hilton-vacation-club-grand-beach-orlando/', '_blank')}
                   >
-                    <Globe className="w-4 h-4 mr-2" />
+                    <GlobeIcon className="w-4 h-4 mr-2" />
                     Book Now
                   </Button>
                 </div>
@@ -156,25 +156,73 @@ export function Travel() {
           </div>
         </div>
 
+        {/* Things to Do */}
+        <div className="mt-16">
+          <div className="flex items-center gap-3 mb-8">
+            <StarIcon weight="fill" className="w-8 h-8 text-primary" />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Things to Do in Orlando</h2>
+          </div>
+          <Separator className="w-24 bg-primary h-0.5 mb-8" />
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="p-6 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg font-semibold mb-2">Walt Disney World</h3>
+              <p className="text-muted-foreground text-sm">
+                The most magical place on earth — just minutes from the venue. Four theme parks, two water parks, and Disney Springs shopping & dining.
+              </p>
+            </Card>
+            <Card className="p-6 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg font-semibold mb-2">Universal Orlando Resort</h3>
+              <p className="text-muted-foreground text-sm">
+                Home to Universal Studios, Islands of Adventure, and the Wizarding World of Harry Potter. CityWalk offers great nightlife.
+              </p>
+            </Card>
+            <Card className="p-6 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg font-semibold mb-2">SeaWorld Orlando</h3>
+              <p className="text-muted-foreground text-sm">
+                Marine life exhibits, thrilling roller coasters, and live shows for the whole family.
+              </p>
+            </Card>
+            <Card className="p-6 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg font-semibold mb-2">ICON Park</h3>
+              <p className="text-muted-foreground text-sm">
+                The Orlando Eye observation wheel, Madame Tussauds, SEA LIFE Aquarium, and plenty of restaurants on International Drive.
+              </p>
+            </Card>
+            <Card className="p-6 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg font-semibold mb-2">Disney Springs</h3>
+              <p className="text-muted-foreground text-sm">
+                No park ticket needed! World-class shopping, dining, and entertainment right near the venue.
+              </p>
+            </Card>
+            <Card className="p-6 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg font-semibold mb-2">International Drive</h3>
+              <p className="text-muted-foreground text-sm">
+                Orlando's entertainment corridor with outlet shopping, escape rooms, TopGolf, and dozens of restaurants.
+              </p>
+            </Card>
+          </div>
+        </div>
+
         {/* Jamaica photo accent */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
           <img
-            src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400&h=400&fit=crop"
+            src="/photos/gallery/jamaica-01.jpeg"
             alt="Jamaica engagement"
             className="rounded-xl object-cover aspect-square w-full"
           />
           <img
-            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=400&fit=crop"
+            src="/photos/gallery/jamaica-11.jpeg"
             alt="Jamaica engagement"
             className="rounded-xl object-cover aspect-square w-full"
           />
           <img
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=400&fit=crop"
+            src="/photos/gallery/jamaica-07.jpeg"
             alt="Jamaica engagement"
             className="rounded-xl object-cover aspect-square w-full hidden md:block"
           />
           <img
-            src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&h=400&fit=crop"
+            src="/photos/gallery/jamaica-05.jpeg"
             alt="Jamaica engagement"
             className="rounded-xl object-cover aspect-square w-full hidden md:block"
           />
