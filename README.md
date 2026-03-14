@@ -1,23 +1,37 @@
-# ✨ Welcome to Your Spark Template!
-You've just launched your brand-new Spark Template Codespace — everything’s fired up and ready for you to explore, build, and create with Spark!
+# Alicia & Stephan — Wedding Website
 
-This template is your blank canvas. It comes with a minimal setup to help you get started quickly with Spark development.
+Wedding website for Alicia Harrington & Stephan Edmonson, November 25, 2026 at Paradise Cove in Orlando, FL.
 
-🚀 What's Inside?
-- A clean, minimal Spark environment
-- Pre-configured for local development
-- Ready to scale with your ideas
-  
-🧠 What Can You Do?
+## Tech Stack
 
-Right now, this is just a starting point — the perfect place to begin building and testing your Spark applications.
+- React 19 + TypeScript
+- Vite 7
+- Tailwind CSS v4
+- React Router DOM
+- Framer Motion
+- Phosphor Icons
+- Shadcn/ui components
+- Formspree (RSVP form)
 
-🧹 Just Exploring?
-No problem! If you were just checking things out and don’t need to keep this code:
+## Pages
 
-- Simply delete your Spark.
-- Everything will be cleaned up — no traces left behind.
+- **Wedding Details** — Hero, countdown, event details, Our Story, photo gallery, FAQ, RSVP, contact
+- **Travel** — Airports, hotel recommendations with booking links, Things to Do in Orlando
+- **Registry** — Amazon registry link, mailing address
 
-📄 License For Spark Template Resources 
+## Development
 
-The Spark Template files and resources from GitHub are licensed under the terms of the MIT license, Copyright GitHub, Inc.
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Deployment
+
+Static site — deploy the `dist/` folder to any host (Vercel, Netlify, etc.).
