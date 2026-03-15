@@ -12,10 +12,6 @@ const faqs = [
     answer: 'Please refer to your invitation for details on plus ones. If you have questions, feel free to reach out to us.'
   },
   {
-    question: 'Are children welcome?',
-    answer: 'While we love your little ones, this will be an adults-only celebration.'
-  },
-  {
     question: 'Is there parking at the venue?',
     answer: 'Yes, Paradise Cove has complimentary parking available for all guests.'
   },

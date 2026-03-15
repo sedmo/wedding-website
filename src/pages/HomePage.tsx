@@ -1,6 +1,5 @@
 import { Hero } from '@/components/Hero'
 import { EventDetails } from '@/components/EventDetails'
-import { OurStory } from '@/components/OurStory'
 import { PhotoGallery } from '@/components/PhotoGallery'
 import { FAQ } from '@/components/FAQ'
 import { RSVPSection } from '@/components/RSVPSection'
@@ -11,7 +10,6 @@ export function HomePage() {
     <>
       <Hero />
       <EventDetails />
-      <OurStory />
       <PhotoGallery />
       <FAQ />
       <RSVPSection />
